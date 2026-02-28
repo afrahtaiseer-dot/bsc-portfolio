@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afrah Taiseer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #4e1043, #946986);
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: rgb(112, 60, 99);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #f3c2e2 ;
+    }
+
+    #home {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color:rgb(112, 60, 99);
+    }
+
+    #home .content {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 12px;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    #home h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    section {
+      padding: 60px 20px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 900px;
+      background: rgb(112, 60, 99);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #380329;
+    }
+
+    .project {
+      background: #f4f6f9;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+
+    .project h3 {
+      margin-bottom: 8px;
+      color:#380329 ;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input, textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      padding: 12px 25px;
+      background-color: #f3c2e2 ;
+      color: rgb(112, 60, 99);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #f3c2e2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+      margin-top: 30px;
+    }
+
+    @media(max-width: 600px) {
+      #home h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <div class="content">
+    <h1><A>Afrah Taiseer</A></h1>
+    <p>B.Sc Data Science Student | </p>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate Data Science student with a strong interest in transforming raw data into meaningful insights.
+  </p>
+  <p>
+    Achievements:
+    Completed Python for Data Science course
+
+Participated in data analysis mini-projects
+  </p>
+  <p>
+    My goal is to become a professional Data Scientist.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Single Page Website</h3>
+    <p>Created using HTML and CSS.</p>
+  </div>
+
+  <div class="project">
+    <h3>Data Analysis Mini Project</h3>
+    <p>Performed basic data cleaning and visualization using Python.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form action="https://formspree.io/f/mjgezlbd" method="POST">
+    
+    <input type="text" name="name" placeholder="Enter your name" required>
+
+    <input type="email" name="email" placeholder="Enter your email" required>
+
+    <textarea name="message" placeholder="Enter your message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Afrah Taiseer| B.Sc Data Science </p>
+</footer>
+
+</body>
+</html>
